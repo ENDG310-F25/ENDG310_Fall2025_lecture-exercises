@@ -1,0 +1,11 @@
+From: alice@example.com
+Subject: Hello
+This is a test email.
+
+From: bob@example.com
+Subject: Meeting
+Let's meet tomorrow.
+
+From: charlie@example.com
+Subject: Project Update
+The project is going well.
