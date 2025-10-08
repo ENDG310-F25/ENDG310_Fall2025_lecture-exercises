@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "department": "Engineering",
+      "salary": 95000,
+      "years_experience": 5
+    },
+    {
+      "id": 2,
+      "name": "Emma Wilson",
+      "department": "Marketing",
+      "salary": 72000,
+      "years_experience": 3
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "department": "Engineering",
+      "salary": 105000,
+      "years_experience": 8
+    },
+    {
+      "id": 4,
+      "name": "Sarah Davis",
+      "department": "HR",
+      "salary": 68000,
+      "years_experience": 4
+    },
+    {
+      "id": 5,
+      "name": "James Johnson",
+      "department": "Sales",
+      "salary": 85000,
+      "years_experience": 6
+    }
+  ]
+}
