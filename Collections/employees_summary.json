@@ -1,0 +1,27 @@
+[
+  {
+    "name":"John Smith",
+    "department":"Engineering",
+    "salary":95000
+  },
+  {
+    "name":"Emma Wilson",
+    "department":"Marketing",
+    "salary":72000
+  },
+  {
+    "name":"Michael Brown",
+    "department":"Engineering",
+    "salary":105000
+  },
+  {
+    "name":"Sarah Davis",
+    "department":"HR",
+    "salary":68000
+  },
+  {
+    "name":"James Johnson",
+    "department":"Sales",
+    "salary":85000
+  }
+]

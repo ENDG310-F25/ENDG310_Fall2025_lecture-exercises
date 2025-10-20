@@ -73,8 +73,6 @@ class SSE_student(Student):
 
         self.ID = self.ID + 1000   # This is a bad idea, but it works
 
-        
-        super().__init__(name, age, major)
 
     def __repr__(self):
         """
@@ -82,3 +80,4 @@ class SSE_student(Student):
         """
 
         return "Schulich Student: " + super().__repr__()
+    
