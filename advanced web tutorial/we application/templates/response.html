@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics Tutorial</title>
+    <style>
+        /* Default Styles */
+        :root {
+            --bg-color: white;
+            --text-color: black;
+            --button-bg: #007bff;
+            --button-color: white;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: var(--text-color);
+        }
+
+        button {
+            background-color: var(--button-bg);
+            color: var(--button-color);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .preview {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .dark-mode {
+            --bg-color: #121212;
+            --text-color: #f0f0f0;
+            --button-bg: #6c757d;
+            --button-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML with Flask Basics Tutorial</h1>
+    <p>Welcome to the HTML Basics tutorial! Learn the essential components of an HTML page.</p>
+    <p>In the previous page you entered:</p>
+    <h1>{{message}}</h1>
+    <h2>Toggle Dark Mode</h2>
+    <button onclick="toggleDarkMode()">Switch Theme</button>
+
+    <h2>Interactive Styling</h2>
+    <p>Try changing the style of the live preview below by entering CSS properties and values.</p>
+    <input id="cssProperty" type="text" placeholder="CSS Property (e.g., color)">
+    <input id="cssValue" type="text" placeholder="Value (e.g., red)">
+    <button onclick="applyCSS()">Apply CSS</button>
+
+    <div class="preview" id="livePreview">
+        <p>This is a live preview. Modify its style using the input above!</p>
+    </div>
+
+    <script>
+        // Toggle Dark Mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        // Apply CSS Changes
+        function applyCSS() {
+            const property = document.getElementById('cssProperty').value;
+            const value = document.getElementById('cssValue').value;
+
+            if (property && value) {
+                document.getElementById('livePreview').style[property] = value;
+            } else {
+                alert('Please enter both a CSS property and value!');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -28,5 +28,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         print(data.decode())
 
         # send a generic reponse
-        response = "HTTP/1.1 200 OK\n\n<html><body>Hello World</body></html>"
+        response = "HTTP/1.1 200 OK\n\n<html><body>Hello World welcome to ENDG 310</body></html>"
         conn.sendall(response.encode())

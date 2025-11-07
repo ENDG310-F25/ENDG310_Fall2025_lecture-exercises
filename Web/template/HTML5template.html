@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE declaration tells the browser this is an HTML5 document -->
+
+<html lang="en">
+  <!-- The <html> element is the root of the document -->
+  <head>
+    <!-- The <head> section contains metadata, not visible content -->
+    <meta charset="UTF-8">
+    <!-- Specifies character encoding, allowing all languages/symbols -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive on all devices -->
+    
+    <meta name="description" content="An educational HTML5 template showing tag hierarchy with image and links.">
+    <!-- Provides a short description used by search engines -->
+
+    <title>HTML5 Educational Template</title>
+    <!-- The title shown in browser tab -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links external CSS file for styling -->
+
+    <script src="script.js" defer></script>
+    <!-- Links external JS file, defer loads it after HTML is parsed -->
+  </head>
+
+  <body>
+    <!-- The <body> contains all visible content -->
+    
+    <header>
+      <!-- The <header> is used for introductory content -->
+      <h1>Welcome to My Educational Page</h1>
+      <nav>
+        <!-- <nav> holds navigation links -->
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.google.com" target="_blank">Visit Google</a></li>
+          <!-- The anchor tag with an external link -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- The <main> contains the main unique content of the page -->
+      
+      <section id="about">
+        <!-- <section> divides content into thematic groups -->
+        <h2>About This Template</h2>
+        <p>This example demonstrates the structure of an HTML5 document with semantic tags, images, and links.</p>
+        
+        <figure>
+          <!-- <figure> groups visual content like images with captions -->
+          <img src="Hierarchy.png" alt="HTML5 tag hierarchy diagram" width="400">
+          <!-- <img> displays an image file in the same folder -->
+          <figcaption>Figure 1. HTML5 Element Hierarchy</figcaption>
+          <!-- <figcaption> adds a caption to the image -->
+        </figure>
+      </section>
+
+      <section id="topics">
+        <h2>Topics Covered</h2>
+        <article>
+          <!-- <article> represents a standalone, self-contained piece of content -->
+          <h3>HTML Structure</h3>
+          <p>Learn how tags form the building blocks of web pages. 
+          For more details, visit 
+          <a href="https://www.google.com" target="_blank">Google</a>.
+          </p>
+          <!-- Inline use of the <a> tag -->
+        </article>
+
+        <article>
+          <h3>Semantic Tags</h3>
+          <p>Understand how elements like &lt;header&gt;, &lt;section&gt;, and &lt;footer&gt; improve meaning and accessibility.</p>
+        </article>
+      </section>
+
+      <section id="tag-explanations">
+        <h2>Explanation of HTML5 Tags Used</h2>
+        <p>This table summarizes all the HTML5 elements used in this educational template, including their purpose and common attributes.</p>
+
+        <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+          <thead style="background-color: #f2f2f2;">
+            <tr>
+              <th>Tag</th>
+              <th>Example / Attribute</th>
+              <th>Purpose / Explanation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;!DOCTYPE html&gt;</td>
+              <td>HTML5 declaration</td>
+              <td>Ensures browser renders in standards mode</td>
+            </tr>
+            <tr>
+              <td>&lt;html lang="en"&gt;</td>
+              <td>Language attribute set to English</td>
+              <td>Root of the HTML document</td>
+            </tr>
+            <tr>
+              <td>&lt;head&gt;</td>
+              <td></td>
+              <td>Contains metadata, not visible on the page</td>
+            </tr>
+            <tr>
+              <td>&lt;meta charset="UTF-8"&gt;</td>
+              <td></td>
+              <td>Specifies Unicode encoding for all languages</td>
+            </tr>
+            <tr>
+              <td>&lt;meta name="viewport"&gt;</td>
+              <td>content="width=device-width, initial-scale=1.0"</td>
+              <td>Makes page responsive on all screen sizes</td>
+            </tr>
+            <tr>
+              <td>&lt;meta name="description"&gt;</td>
+              <td>content="..."</td>
+              <td>Provides short SEO-friendly summary of the page</td>
+            </tr>
+            <tr>
+              <td>&lt;title&gt;</td>
+              <td>HTML5 Educational Template</td>
+              <td>Displayed in browser tab</td>
+            </tr>
+            <tr>
+              <td>&lt;link rel="stylesheet"&gt;</td>
+              <td>href="styles.css"</td>
+              <td>Links an external CSS file</td>
+            </tr>
+            <tr>
+              <td>&lt;script&gt;</td>
+              <td>src="script.js" defer</td>
+              <td>Links JavaScript file, defers execution until loaded</td>
+            </tr>
+            <tr>
+              <td>&lt;body&gt;</td>
+              <td></td>
+              <td>Contains all visible content on the page</td>
+            </tr>
+            <tr>
+              <td>&lt;header&gt;</td>
+              <td></td>
+              <td>Introductory content such as logo or navigation</td>
+            </tr>
+            <tr>
+              <td>&lt;h1&gt;...&lt;/h1&gt;</td>
+              <td></td>
+              <td>Top-level heading for the page</td>
+            </tr>
+            <tr>
+              <td>&lt;nav&gt;</td>
+              <td></td>
+              <td>Defines navigation links for the site</td>
+            </tr>
+            <tr>
+              <td>&lt;ul&gt;, &lt;li&gt;</td>
+              <td>List of navigation items</td>
+              <td>Represents unordered list of links or items</td>
+            </tr>
+            <tr>
+              <td>&lt;a href="#about"&gt;</td>
+              <td>Internal link</td>
+              <td>Scrolls to an element on the same page</td>
+            </tr>
+            <tr>
+              <td>&lt;a href="https://www.google.com" target="_blank"&gt;</td>
+              <td>External link</td>
+              <td>Opens Google in a new browser tab</td>
+            </tr>
+            <tr>
+              <td>&lt;a href="mailto:info@example.com"&gt;</td>
+              <td>Email link</td>
+              <td>Opens the user’s email client</td>
+            </tr>
+            <tr>
+              <td>&lt;main&gt;</td>
+              <td></td>
+              <td>Holds the main, unique content of the page</td>
+            </tr>
+            <tr>
+              <td>&lt;section&gt;</td>
+              <td></td>
+              <td>Groups related thematic content</td>
+            </tr>
+            <tr>
+              <td>&lt;article&gt;</td>
+              <td></td>
+              <td>Independent, self-contained content block</td>
+            </tr>
+            <tr>
+              <td>&lt;h2&gt;, &lt;h3&gt;</td>
+              <td></td>
+              <td>Subheadings that provide hierarchy and structure</td>
+            </tr>
+            <tr>
+              <td>&lt;p&gt;</td>
+              <td></td>
+              <td>Paragraph element for text content</td>
+            </tr>
+            <tr>
+              <td>&lt;figure&gt;</td>
+              <td></td>
+              <td>Groups visual content like images with captions</td>
+            </tr>
+            <tr>
+              <td>&lt;img&gt;</td>
+              <td>src="Hierarchy.png" alt="HTML5 hierarchy diagram"</td>
+              <td>Displays image from local folder; alt provides accessibility text</td>
+            </tr>
+            <tr>
+              <td>&lt;figcaption&gt;</td>
+              <td></td>
+              <td>Adds a descriptive caption to a figure</td>
+            </tr>
+            <tr>
+              <td>&lt;aside&gt;</td>
+              <td></td>
+              <td>Sidebar or supplementary information</td>
+            </tr>
+            <tr>
+              <td>&lt;footer&gt;</td>
+              <td></td>
+              <td>Bottom section with author info or contact links</td>
+            </tr>
+            <tr>
+              <td>&amp;copy;</td>
+              <td>HTML entity</td>
+              <td>Displays the © copyright symbol</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside>
+        <!-- <aside> is for tangential or related content, like a sidebar -->
+        <h3>Did You Know?</h3>
+        <p>The &lt;main&gt; tag can only appear once per page!</p>
+      </aside>
+
+
+    </main>
+
+    <footer id="contact">
+      <!-- <footer> contains author info, copyright, or navigation links -->
+      <p>&copy; 2025 Educational Template by Maan Khedr</p>
+      <p>Contact: <a href="mailto:maan.khedr@ucalgary.ca">Maan Khedr</a></p>
+      <!-- Example of a mailto link -->
+    </footer>
+  </body>
+</html>
